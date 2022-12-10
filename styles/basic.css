@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Titillium+Web:ital,wght@1,300&display=swap');
+:root{
+    --color-green: #7ddf64;
+    --color-blue: #355070;
+    --color-salmon: #deb986;
+    --color-red: #ef2917;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-green);
+}
+
+main{
+    padding: 1rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Bungee Inline', cursive;
+
+}
+
+p{
+    font-family: 'Titillium Web', sans-serif; 
+}
+
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blue);
+
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-salmon);
+    font-family: 'Titillium Web', sans-serif; 
+    font-size: 1.6rem;
+    
+}
+
+
+nav ul li a:hover {
+    background-color: #2e4c4cca;
+    padding: 0 1rem;
+    color: var(--color-red);
+}
+    
+.nav-bar ul {
+display: none;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+#hamburgerBtn{
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    color: var(--color-salmon);
+    font-size: 2rem;
+    background-color: var(--color-blue);
+}
+
+.gridbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gridbox h2 {
+    margin-top: -3rem;
+    
+}
+
+.gridbox p{
+    margin-top: -2rem;
+    padding: 1rem;
+    
+}
