@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="./scripts/scripts.js" defer></script>
+
+
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    
+    <header>
+
+            <div class="logohead"><img src="./beachimg.png" alt="" width="100" height="100"></div>
+            
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+
+    </header>
+
+    <section class="nav-bar">
+        <nav>
+            
+            <ul id="primaryNav">
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <main>
+        <div class="container-form" >
+            <form action="">
+                <h2>Create your own drink</h2>
+
+                <fieldset class="rinfo">
+                    <legend>Required Information</legend>
+                    <label class="top">First Name* <input type="text" name="firstname" id="fname" required></label>
+
+                    <label class="top">Last Name*  <input type="text" name="lname" required></label>
+
+                    <label class="top">Email*  <input type="email" name="email" placeholder="yourmail@yourmail.com" required></label>
+
+                    <label class="top">Phone Number*  <input type="tel" name="phone" placeholder="1234567" required></label>
+
+                </fieldset>
+
+                <fieldset class="choose">
+                    <legend>Choose the components</legend>
+                    <div id="scroll">
+                        <input type="checkbox" class="fruits" name="fruits" value="frutilla" >
+                        <label for="fruits">Frutilla</label><br>
+
+                        <input type="checkbox" class="fruits" name="fruits" value="Pineapple">
+                        <label for="fruits">Pineapple</label><br>
+
+                        <input type="checkbox" class="fruits" name="fruits" value="apple">
+                        <label for="fruits">Apple</label><br>
+
+                        <input type="checkbox" class="fruits" name="fruits" value="Orange">
+                        <label for="fruits">Orange</label><br>
+                    </div>
+                </fieldset>
+
+            </form>
+            
+
+        </div>
+    </main>
+        
+
+       
+
+    <footer>
+        <div class="logofooter"><img src="./beachimg.png" alt="" width="150" height="150"></div>
+        <div class="social">
+            <a href="https://www.instagram.com/"><img src="./images/instagram-img.png.png" alt="insta-image" width="30" height="30"></a>
+            <a href="https://www.facebook.com/"><img src="./images/facebook.png.png" alt="fb-image" width="30" height="30"></a>
+            <a href="https://www.twitter.com/"><img src="./images/twitter.png" alt="twitter-image" width="30" height="30"></a>
+        </div>
+        <div class="lastmodified">Last modified here</div>
+    </footer>
+    
+</body>
+</html>
