@@ -1,4 +1,12 @@
 @media only screen and (min-width: 35rem) { 
+    :root{
+        --color-green: #7ddf64;
+        --color-blue: #355070;
+        --color-salmon: #deb986;
+        --color-red: #ef2917;
+        --text-: 'Titillium Web', sans-serif; 
+        --titles-: 'Bungee Inline', cursive;
+    }
        
       nav ul#primaryNav {
         display: flex;
@@ -10,9 +18,15 @@
 
       .nav-bar ul li a{
         font-size: 2.5rem;
+        margin: 2rem 0;
       }
       nav ul li a:hover {
         font-size: 2rem;
+    }
+
+    nav ul li a.active { 
+        color:var(--color-green);
+        transition: .6s;
     }
     
       #hamburgerBtn{
@@ -64,4 +78,41 @@
         font-size: 1.5rem;
        
     }
+
+
+    /* Form Page */ 
+
+input.fruits{
+    width: 2rem;
+    height: 2rem;
+}
+
+fieldset{
+    border: none;
+}
+.top input{
+    font-size: 2rem;
+}
+
+fieldset legend{
+    font-size: 2rem;
+    font-family: var(--text-);
+}
+
+fieldset label{
+    font-size: 2.5rem;
+    font-family: var(--text-);
+}
+
+#scroll{
+    border:none;
+    height:300px;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+form h2{
+    font-size: 3rem;
+}
+
 }

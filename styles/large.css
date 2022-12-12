@@ -1,0 +1,47 @@
+@media only screen and (min-width: 64em) {
+    :root{
+        --color-green: #7ddf64;
+        --color-blue: #355070;
+        --color-salmon: #deb986;
+        --color-red: #ef2917;
+        --text-: 'Titillium Web', sans-serif; 
+        --titles-: 'Bungee Inline', cursive;
+    }
+    html{
+        background-color: var(--color-green);
+    }
+    body{
+        margin: 0 auto;
+        width: 80%;
+        background-color: white
+    }
+
+    ul#primaryNav{
+        position: sticky;
+    }
+    .banner{
+        width: 100%;
+        height: 40rem;
+    }
+
+    .gridbox{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .gridbox p{
+        padding: 3rem;
+    }
+
+    .gridbox div{
+        padding: 2rem;
+    }
+
+    div.callaction {
+        padding-left: 0;
+    }
+
+
+    
+}
