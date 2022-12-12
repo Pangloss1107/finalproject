@@ -1,0 +1,43 @@
+@media only screen and (min-width: 35rem) { 
+       
+      nav ul#primaryNav {
+        display: flex;
+      }
+    
+      nav ul li a {
+        border: none;
+      }
+
+      .nav-bar ul li a{
+        font-size: 2.5rem;
+      }
+      nav ul li a:hover {
+        font-size: 2rem;
+    }
+    
+     
+
+      #hamburgerBtn{
+        display: none;
+    }
+
+    .logohead img{
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .gridbox h2 {
+        font-size: 2.5rem;
+        
+    }
+    
+    .gridbox p{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .gridbox img{
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
