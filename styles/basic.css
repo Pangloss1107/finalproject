@@ -64,7 +64,7 @@ p{
 }
 
 .banner{
-    background-image: url(../images/Montevideo.png);
+    background-image: url(../images/fruits-banner.jpg);
     background-size: cover;
     height: 200px;
     position: relative;
@@ -78,12 +78,16 @@ p{
     text-align: center;
     background-color: rgba(0,0,0, .5);
     color: var(--color-salmon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-title{
     display: flex;
     justify-content: center;
 }
+
 
 nav ul li a:hover {
     background-color: #2e4c4cca;
@@ -201,8 +205,9 @@ footer{
 
 .lastmodified{
     color: var(--color-salmon);
+    font-family: var(--text-);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 1px solid var(--color-salmon);
 }
 

@@ -29,6 +29,10 @@
         transition: .6s;
     }
     
+    div.logohead img{
+        width: 400px;
+        height: 400px;
+    }
       #hamburgerBtn{
         display: none;
     }
@@ -53,6 +57,9 @@
         margin-bottom: 1.5rem;
     }
 
+    .content-banner{
+        font-size: 2rem;
+    }
 
     .social img{
         width: 3rem;
@@ -61,8 +68,8 @@
     }
     
     .logofooter img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
 
@@ -77,6 +84,10 @@
     .callaction button{
         font-size: 1.5rem;
        
+    }
+
+    .lastmodified{
+        font-size: 1.5rem;
     }
 
 
