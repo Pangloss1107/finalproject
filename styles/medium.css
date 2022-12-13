@@ -115,4 +115,29 @@ form h2{
     font-size: 3rem;
 }
 
+
+.forecasting h3{
+    font-size: 2.5rem;
+    
+}
+
+div.forecas-days{
+    font-size: 2rem;
+}
+
+.forecas-days img{
+    width: 150px;
+}
+
+
+
+.weather h3{
+    font-family: var(--text-);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.weather p{
+    font-size: 2rem;
+}
 }

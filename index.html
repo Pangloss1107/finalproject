@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../finalproject/styles/medium.css">
     <link rel="stylesheet" href="../finalproject/styles/large.css">
     <link rel="stylesheet" href="../finalproject/styles/normalize.css">
-    <script src="../finalproject/scripts/scripts.js" defer></script>
+    
 
 
     <title>Bountiful Foods</title>
@@ -43,7 +43,20 @@
 
     <main>
         
-
+        <section class="wsection">
+            <div class="weather">
+                <h3>Current Weather in Carlsbad, California</h3>
+                <p>Currently: <span id="wcurrent"></span> &deg;C</p>
+                <p>Description: <span id="descriptionw"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                </div>
+          
+          <div class="forecasting">
+            <h3>Forecast 3 days</h3>
+            <div class="forecas-days"></div>
+            <a href="https://api.openweathermap.org/data/2.5/onecall?lat=33.1239&lon=-117.3506&exclude=current,alerts&appid=f2d1a5e40996e4db6f64e25ba3b67c8f&units=metric" target="_blank">OpenWeatherMap</a>
+          </div>
+        </section>
         <h2 class="main-title"> Nuestros servicios </h2>
 
         <div class="gridbox">
@@ -87,6 +100,9 @@
         </div>
         <div class="lastmodified">Last modified here</div>
     </footer>
+
+    <script src="../finalproject/scripts/scripts.js" defer></script>
+    <script src="../finalproject/scripts/weather.js" defer></script>
     
 </body>
 </html>

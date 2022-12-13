@@ -43,5 +43,64 @@
     }
 
 
+    .submitBtn:hover{
+        background-color: var(--color-salmon);
+        color: var(--color-blue);
+
+    }
+
+    .callaction{
+        width: 80%;
+        margin: 0 auto;
+        
+    }
     
+    .callaction button:hover{
+        background-color: var(--color-salmon);
+        color: var(--color-blue);
+    }
+
+    .forecas-days{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .forecas-days img{
+        margin-right: 4rem;
+    }
+    
+    .forecasting{
+        width: 100%;
+    }
+
+    .forecasting h3{
+        font-size: 1rem;
+        
+    }
+    
+    div.forecas-days{
+        font-size: 1rem;
+    }
+    
+    .forecas-days img{
+        width: 80px;
+    }
+    
+    
+    .weather h3{
+        font-family: var(--text-);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .weather p{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    .wsection{ border: 1px solid var(--color-blue);
+        box-shadow: 10px 10px rgba(0,0,0,.5);
+    }
 }
