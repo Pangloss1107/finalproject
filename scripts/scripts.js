@@ -9,34 +9,52 @@ function toggleMenu() {
 
 
  // Fresh page 
-
- const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
-    const names = jsonObject["name"];
-    
-    for (let i = 0; i < 5; i++) {
-        let checkbox = document.createElement("input");
-        let fruits = document.createElement("label");   
-        let p3 = document.createElement("p");   
-
-        checkbox.setAttribute('type', 'checkbox', 'class', "fruits",  'name', "fruits", 'value')
-        p3 = names[i].name
-        fruits.setAttribute('for')
-        checkbox.appendChild(fruits)
-        checkbox.appendChild(p3)
+ 
+const checkbox = document.querySelector('.choose')
+const requestUrl = "https://brotherblazzard.github.io/canvas-content/fruit.json"
 
 
-      document.querySelector("div#scroll").appendChild(clientsbox);
+function cargarFruits(){
+  fetch(requestUrl)
+  .then(respuesta => respuesta.json())
+  .then(fruits => {
+    fruits.forEach(fruit =>{
+      console.log(fruit)
+      console.log(fruit.name)
+      const checb = document.createElement('div');
+      checb.className = 'check'
+      checb.innerHTML += `
+      
+      <input type="checkbox" name="fruits" value="${fruit.name}" class="checkbox">
+      <label for="fruits">${fruit.name}</label><br>
+      
+      `;
+      checkbox.appendChild(checb)
     }
+      )
+
   });
+};
+cargarFruits();
 
 
+
+let valueList = document.getElementById('valueList');
+let text = '<span> you have selected : </span>';
+let listArray = [];
+
+let checkboxes = document.getElementsByClassName('.check');
+  for(let checkbox of checkboxes){
+    checkbox.addEventListener('click', function(){
+    if(this.checked ==true){
+      listArray.push(this.value);
+      valueList.innerHTML = text + listArray.join(' / ')
+    } else{
+      console.log('unchecked');
+
+    }
+    })
+  }
 
 
 //Footer Info 

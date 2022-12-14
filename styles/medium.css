@@ -115,12 +115,17 @@ fieldset label{
     font-family: var(--text-);
 }
 
-#scroll{
+div#scroll{
     border:none;
     height:300px;
     width:100%;
     overflow-y:scroll;
     overflow-x:hidden;
+}
+
+#scroll fieldset input{
+    width: 2rem;
+    height: 1.5rem;
 }
 form h2{
     font-size: 3rem;
