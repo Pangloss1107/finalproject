@@ -305,7 +305,8 @@ form h2{
 }
 
 div.forecas-days{
-    font-family: var(--text-);;
+    font-family: var(--text-);
+    display: flex;
 }
 
 .forecas-days img{
@@ -355,4 +356,14 @@ div.forecas-days{
 
 .about-title{
     text-align: center;
+}
+
+.submitboton{
+    background-color: var(--color-blue);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:1rem;
+    color: white;
+    font-family: var(--text-);
 }

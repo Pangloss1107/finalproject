@@ -65,7 +65,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
     }
     .forecas-days img{
         margin-right: 4rem;
@@ -102,6 +101,7 @@
 
     .wsection{ border: 1px solid var(--color-blue);
         box-shadow: 10px 10px rgba(0,0,0,.5);
+        margin-top: 1rem;
     }
 
     .frame2{
