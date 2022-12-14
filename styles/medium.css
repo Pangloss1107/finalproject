@@ -151,4 +151,10 @@ div.forecas-days{
 .weather p{
     font-size: 2rem;
 }
+
+
+.galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }

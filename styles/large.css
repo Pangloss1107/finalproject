@@ -107,4 +107,21 @@
     .frame2{
         margin-top: -9rem;
     }
+
+    .grid-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    label.top{
+        font-size: 1.8rem;
+    }
+
+    .galery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
